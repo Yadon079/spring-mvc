@@ -18,7 +18,7 @@ public class MemberListControllerV3 implements ControllerV3 {
     List<Member> members = memberRepository.findAll();
 
     ModelView mv = new ModelView("members");
-    mv.getMdoel().put("members", members);
+    mv.getModel().put("members", members);
 
     return mv;
   }
